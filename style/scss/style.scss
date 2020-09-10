@@ -1,9 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .hide {
     display: none;
 }
 
-.car {
+.car, .enemy {
     width: 50px;
     height: 100px;
     background: transparent url('../../assets/image/player.png') center/cover no-repeat;
+    position: absolute;
+    left: 175px;
+    bottom: 10px;
+}
+
+.game-area {
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    background: black;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: white;
+    left: 195px;
 }
